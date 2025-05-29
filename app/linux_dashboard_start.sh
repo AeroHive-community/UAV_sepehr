@@ -34,11 +34,12 @@
 cat << "EOF"
 
 
-  __  __   ___   _____ ___  _  __  ___  ___  ___  _  _ ___   ___ _  _  _____      __   ____  __ ___  _____  
- |  \/  | /_\ \ / / __|   \| |/ / |   \| _ \/ _ \| \| | __| / __| || |/ _ \ \    / /  / /  \/  |   \/ __\ \ 
- | |\/| |/ _ \ V /\__ \ |) | ' <  | |) |   / (_) | .` | _|  \__ \ __ | (_) \ \/\/ /  | || |\/| | |) \__ \| |
- |_|  |_/_/ \_\_/ |___/___/|_|\_\ |___/|_|_\\___/|_|\_|___| |___/_||_|\___/ \_/\_/   | ||_|  |_|___/|___/| |
-                                                                                      \_\               /_/ 
+ _   _   ___     __  ____                  _          
+| | | | / \ \   / / / ___|  ___ _ __   ___| |__  _ __ 
+| | | |/ _ \ \ / /  \___ \ / _ \ '_ \ / _ \ '_ \| '__|
+| |_| / ___ \ V /    ___) |  __/ |_) |  __/ | | | |   
+ \___/_/   \_\_/    |____/ \___| .__/ \___|_| |_|_|   
+                               |_|                   
 
 
 EOF
@@ -55,8 +56,8 @@ ENABLE_AUTO_PULL=true  # Enable or disable the automatic pulling and syncing of 
 SESSION_NAME="DroneServices"
 GCS_PORT=5000
 GUI_PORT=3000
-VENV_PATH="$HOME/mavsdk_drone_show/venv"
-UPDATE_SCRIPT_PATH="$HOME/mavsdk_drone_show/tools/update_repo_ssh.sh"  # Path to the repo update script
+VENV_PATH="$HOME/UAV_sepehr/venv"
+UPDATE_SCRIPT_PATH="$HOME/UAV_sepehr/tools/update_repo_ssh.sh"  # Path to the repo update script
 BRANCH_NAME="main-candidate"  # Set default branch to main-candidate
 
 # Get the script directory
