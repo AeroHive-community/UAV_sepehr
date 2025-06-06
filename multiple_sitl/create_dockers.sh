@@ -16,7 +16,7 @@ cat << "EOF"
 
 EOF
 
-echo "Project: mavsdk_drone_show (alireza787b/mavsdk_drone_show)"
+echo "Project: UAV_sepehr (alireza787b/UAV_sepehr)"
 echo "Version: 1.4 (November 2024)"
 echo
 echo "This script creates and configures multiple Docker container instances for the drone show simulation."
@@ -45,8 +45,8 @@ echo "==============================================================="
 echo
 
 # Global variables
-STARTUP_SCRIPT_HOST="$HOME/mavsdk_drone_show/multiple_sitl/startup_sitl.sh"
-STARTUP_SCRIPT_CONTAINER="/root/mavsdk_drone_show/multiple_sitl/startup_sitl.sh"
+STARTUP_SCRIPT_HOST="$HOME/UAV_sepehr/multiple_sitl/startup_sitl.sh"
+STARTUP_SCRIPT_CONTAINER="/root/UAV_sepehr/multiple_sitl/startup_sitl.sh"
 TEMPLATE_IMAGE="uav-sepehr-template:latest"
 VERBOSE=false
 
@@ -201,7 +201,7 @@ create_instance() {
     printf "Container '%s' started successfully with IP '%s'.\n" "$container_name" "$IP_ADDRESS"
 
     # Ensure the directory exists inside the container
-    if ! docker exec "$container_name" mkdir -p "/root/mavsdk_drone_show/multiple_sitl/"; then
+    if ! docker exec "$container_name" mkdir -p "/root/UAV_sepehr/multiple_sitl/"; then
         printf "Error: Failed to create directory in '%s'\n" "$container_name" >&2
         docker stop "$container_name" >/dev/null
         docker rm "$container_name" >/dev/null
@@ -210,7 +210,7 @@ create_instance() {
     fi
 
     # Transfer the .hwID file to the container
-    if ! docker cp "$hwid_file" "${container_name}:/root/mavsdk_drone_show/"; then
+    if ! docker cp "$hwid_file" "${container_name}:/root/UAV_sepehr/"; then
         printf "Error: Failed to copy hwID file to container '%s'\n" "$container_name" >&2
         docker stop "$container_name" >/dev/null
         docker rm "$container_name" >/dev/null
@@ -361,15 +361,15 @@ EOF
 
     # Print success message with additional instructions
     printf "To run the Swarm Dashboard, execute the following command:\n"
-    printf "  bash ~/mavsdk_drone_show/app/linux_dashboard_start.sh --sitl\n"
+    printf "  bash ~/UAV_sepehr/app/linux_dashboard_start.sh --sitl\n"
     printf "You can access the swarm dashboard at http://GCS_SERVER_IP:3000\n\n"
 
     printf "To access QGC on another system, ensure 'mavlink-router' is installed:\n"
-    printf "  bash ~/mavsdk_drone_show/tools/mavlink-router-install.sh\n\n"
+    printf "  bash ~/UAV_sepehr/tools/mavlink-router-install.sh\n\n"
 
     printf "Then run one of the following commands:\n"
     printf "  mavlink-routerd -e REMOTE_GCS_IP:24550 0.0.0.0:34550\n"
-    printf "  bash ~/mavsdk_drone_show/tools/mavlink_route.sh REMOTE_GCS_IP:24550\n\n"
+    printf "  bash ~/UAV_sepehr/tools/mavlink_route.sh REMOTE_GCS_IP:24550\n\n"
 
     printf "Now you can connect via QGC on port 24550 UDP from the remote GCS client.\n"
 
