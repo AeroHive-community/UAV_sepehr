@@ -22,8 +22,8 @@ set -euo pipefail
 BACKUP_SCRIPT="$HOME/backup_msd"
 RESTORE_SCRIPT="$HOME/restore_msd"
 GEN_LOG_FILE="/tmp/create_backup_restore.log"  # Log for this generator script
-SRC_DIR="$HOME/mavsdk_drone_show"
-BAK_DIR="$HOME/mavsdk_drone_show_backup"
+SRC_DIR="$HOME/UAV_sepehr"
+BAK_DIR="$HOME/UAV_sepehr_backup"
 
 ###################################
 # Logging Function for Generator

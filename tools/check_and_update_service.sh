@@ -6,8 +6,8 @@
 set -euo pipefail
 
 # Paths
-REPO_USER="droneshow"
-REPO_DIR="/home/${REPO_USER}/mavsdk_drone_show"
+REPO_USER="AeroHive"
+REPO_DIR="/home/${REPO_USER}/UAV_sepehr"
 SERVICE_FILE_REPO_PATH="${REPO_DIR}/tools/coordinator.service"
 SYSTEMD_SERVICE_PATH="/etc/systemd/system/coordinator.service"
 

@@ -17,11 +17,11 @@ IFS=$'\n\t'
 # =============================================================================
 # Default Values
 # =============================================================================
-DEFAULT_BRANCH="main-candidate"
+DEFAULT_BRANCH="aerohive-dev"
 DEFAULT_MANAGEMENT_URL="https://nb1.joomtalk.ir"
-DEFAULT_REPO_URL="git@github.com:alireza787b/mavsdk_drone_show.git"
+DEFAULT_REPO_URL="git@github.com:AeroHive-community/UAV_sepehr.git"
 DEFAULT_SSH_KEY_PATH="$HOME/.ssh/id_rsa_git_deploy"
-REPO_DIR="$HOME/mavsdk_drone_show"
+REPO_DIR="$HOME/UAV_sepehr"
 
 # =============================================================================
 # Flags to Skip Steps (default: false)
