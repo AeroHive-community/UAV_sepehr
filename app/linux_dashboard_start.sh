@@ -58,7 +58,7 @@ GCS_PORT=5000
 GUI_PORT=3000
 VENV_PATH="$HOME/UAV_sepehr/venv"
 UPDATE_SCRIPT_PATH="$HOME/UAV_sepehr/tools/update_repo_ssh.sh"  # Path to the repo update script
-BRANCH_NAME="main-candidate"  # Set default branch to main-candidate
+BRANCH_NAME="aerohive-dev"  # Set default branch to main-candidate
 
 # Get the script directory
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
