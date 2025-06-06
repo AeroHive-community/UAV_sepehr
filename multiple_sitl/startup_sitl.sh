@@ -23,7 +23,7 @@ set -euo pipefail
 
 # GitHub Repository Details
 DEFAULT_GIT_REMOTE="origin"
-DEFAULT_GIT_BRANCH="main-candidate"
+DEFAULT_GIT_BRANCH="aerohive-dev"
 GITHUB_REPO_URL="https://github.com/AeroHive-community/UAV_sepehr.git"
 
 # Option to use global Python

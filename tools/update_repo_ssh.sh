@@ -40,7 +40,7 @@ MAX_RETRIES=10
 INITIAL_DELAY=1               # Delay (in seconds) between retries
 REPAIR_TIMEOUT=120            # Timeout (in seconds) for git-repair (2 minutes)
 SITL_BRANCH="docker-sitl-2"
-REAL_BRANCH="main-candidate"
+REAL_BRANCH="aerohive-dev"
 
 DEFAULT_REPO_DIR="${HOME}/UAV_sepehr"
 DEFAULT_SSH_GIT_URL="git@github.com:AeroHive-community/UAV_sepehr.git"

@@ -7,12 +7,12 @@ set -o pipefail
 cat << "EOF"
 
 
-  __  __   ___   _____ ___  _  __  ___  ___  ___  _  _ ___   ___ _  _  _____      __   ____  __ ___  _____  
- |  \/  | /_\ \ / / __|   \| |/ / |   \| _ \/ _ \| \| | __| / __| || |/ _ \ \    / /  / /  \/  |   \/ __\ \ 
- | |\/| |/ _ \ V /\__ \ |) | ' <  | |) |   / (_) | .` | _|  \__ \ __ | (_) \ \/\/ /  | || |\/| | |) \__ \| |
- |_|  |_/_/ \_\_/ |___/___/|_|\_\ |___/|_|_\\___/|_|\_|___| |___/_||_|\___/ \_/\_/   | ||_|  |_|___/|___/| |
-                                                                                      \_\               /_/ 
-
+ _   _   ___     __  ____                  _          
+| | | | / \ \   / / / ___|  ___ _ __   ___| |__  _ __ 
+| | | |/ _ \ \ / /  \___ \ / _ \ '_ \ / _ \ '_ \| '__|
+| |_| / ___ \ V /    ___) |  __/ |_) |  __/ | | | |   
+ \___/_/   \_\_/    |____/ \___| .__/ \___|_| |_|_|   
+                               |_|                   
 
 EOF
 
@@ -47,7 +47,7 @@ echo
 # Global variables
 STARTUP_SCRIPT_HOST="$HOME/mavsdk_drone_show/multiple_sitl/startup_sitl.sh"
 STARTUP_SCRIPT_CONTAINER="/root/mavsdk_drone_show/multiple_sitl/startup_sitl.sh"
-TEMPLATE_IMAGE="drone-template:latest"
+TEMPLATE_IMAGE="uav-sepehr-template:latest"
 VERBOSE=false
 
 # Variables for custom network, starting drone ID, and starting IP
